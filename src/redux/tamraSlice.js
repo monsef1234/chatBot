@@ -24,6 +24,7 @@ export const addQuestion = createAsyncThunk(
         frequency_penalty: 0,
         presence_penalty: 0,
       });
+      console.log(response);
       return {
         answer: response.data.choices[0].text.split("\n").join(""),
         message,
