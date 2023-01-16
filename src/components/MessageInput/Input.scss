@@ -1,0 +1,36 @@
+.inputSection {
+  background-color: var(--clr1);
+  height: 10%;
+  .inputContent {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    form {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+      input {
+        flex: 1;
+        padding: 1rem 0.5rem;
+        font-size: 1.3rem;
+        border-radius: 1rem;
+        outline: none;
+        border: none;
+        &::placeholder {
+          text-transform: capitalize;
+          font-style: italic;
+        }
+      }
+      button {
+        all: unset;
+        background-color: #fff;
+        display: flex;
+        padding: 1rem;
+        border-radius: 50%;
+        background-color: var(--bg-color);
+        cursor: pointer;
+      }
+    }
+  }
+}
