@@ -8,6 +8,9 @@ const Input = () => {
   const dispatch = useDispatch();
   const submitHandler = (eo) => {
     eo.preventDefault();
+    if (userQuestion === "") {
+      return;
+    }
     dispatch(addQuestion(userQuestion));
     setUserQuestion("");
   };

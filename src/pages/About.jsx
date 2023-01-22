@@ -7,9 +7,9 @@ const About = () => {
       <Container>
         <h1>About</h1>
         <p>
-          About ”AskTamra” is a chatbot that answers your questions , It aims to
-          help you find answers to your questions about life. This application
-          is developed by{" "}
+          ”AskTamra” is a chatbot that answers your questions , It aims to help
+          you find answers to your questions about life. This application is
+          developed by{" "}
           <a
             href="http://www.github.com/monsef1234"
             target="_blank"
