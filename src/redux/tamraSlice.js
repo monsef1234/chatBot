@@ -7,7 +7,7 @@ const initialState = {
   messageData: [],
 };
 const configuration = new Configuration({
-  apiKey: import.meta.env.VITE_OPENAI_KEY,
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 export const addQuestion = createAsyncThunk(
@@ -18,8 +18,8 @@ export const addQuestion = createAsyncThunk(
       const response = await openai.createCompletion({
         model: "text-davinci-003",
         prompt: message,
-        temperature: 0.7,
-        max_tokens: 256,
+        temperature: 0,
+        max_tokens: 100,
         top_p: 1,
         frequency_penalty: 0,
         presence_penalty: 0,
