@@ -7,7 +7,7 @@ const initialState = {
   messageData: [],
 };
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 export const addQuestion = createAsyncThunk(
