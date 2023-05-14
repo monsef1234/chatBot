@@ -7,7 +7,10 @@ const initialState = {
   messageData: [],
 };
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey:
+    "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" ||
+    "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" ||
+    "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",
 });
 const openai = new OpenAIApi(configuration);
 export const addQuestion = createAsyncThunk(
